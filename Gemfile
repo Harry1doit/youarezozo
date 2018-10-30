@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails',        '5.1.6'
+gem 'rails',        '5.2'
 gem 'bcrypt',       '3.1.12'
 gem 'faker',          '1.7.3'
 gem 'carrierwave',   '1.2.3'
+gem "aws-sdk-s3", require: false #追記
 gem 'cloudinary'
 gem 'mini_magick',             '4.7.0'
 gem 'will_paginate',           '3.1.6'
