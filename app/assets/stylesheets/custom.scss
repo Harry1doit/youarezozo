@@ -15,6 +15,7 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
+  // font-weight: bold;
 }
 
 section {
@@ -43,6 +44,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  font-weight: bold;
 }
 
 h2 {
@@ -54,9 +56,25 @@ h2 {
   color: $gray-light;
 }
 
+h3{
+  font-size: 3.0em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  // color: #FFC09F ;
+  // color:  #ADF7B6;
+  color: $gray-light;
+}
+
+h4{
+  font-size:2.0em;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  font-weight: bold;
 }
 
 
@@ -67,7 +85,7 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: white;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
@@ -80,7 +98,7 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 20px;
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
@@ -138,6 +156,44 @@ aside {
 
 .gravatar_edit {
   margin-top: 15px;
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
 }
 
 /* forms */
