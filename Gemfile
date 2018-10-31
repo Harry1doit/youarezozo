@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~> 5.2.0.beta2'
-gem "aws-sdk-s3", require: false
 gem 'cloudinary'
-gem 'fog-aws'
 gem 'bcrypt',       '3.1.12'
 gem 'faker',          '1.7.3'
 gem 'carrierwave',   '1.2.3'
