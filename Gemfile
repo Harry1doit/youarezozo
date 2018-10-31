@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails',        '5.2'
+gem 'rails',        '5.2.0'
+gem "aws-sdk-s3", require: false
 gem 'bcrypt',       '3.1.12'
 gem 'faker',          '1.7.3'
 gem 'carrierwave',   '1.2.3'
@@ -39,7 +40,6 @@ end
 group :production do
   gem 'pg', '< 1.0.0'
   gem 'fog', '1.42'
-  gem "aws-sdk-s3", require: false
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
