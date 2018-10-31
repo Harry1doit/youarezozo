@@ -20,7 +20,7 @@ gem 'jbuilder',     '2.7.0'
 
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
+  gem 'sqlite3', groups: %w(test development), require: false
   gem 'byebug',  '9.0.6', platform: :mri
 end
 
@@ -40,7 +40,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '< 1.0.0'
+  gem 'pg', groups: %w(production), require: false
   gem 'fog', '1.42'
 end
 
