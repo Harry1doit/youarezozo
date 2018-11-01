@@ -6,8 +6,6 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-config.assets.initialize_on_precompile = false
-
 
 module SampleApp
   class Application < Rails::Application
@@ -19,3 +17,5 @@ module SampleApp
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+config.assets.initialize_on_precompile = false
