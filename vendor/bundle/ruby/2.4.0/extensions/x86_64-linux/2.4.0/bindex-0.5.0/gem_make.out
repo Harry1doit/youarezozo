@@ -1,5 +1,5 @@
 current directory: /home/ec2-user/environment/sample_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
-/usr/local/rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20181031-15466-n4r1ql.rb extconf.rb
+/usr/local/rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20181101-10323-m3tajo.rb extconf.rb
 creating Makefile
 
 current directory: /home/ec2-user/environment/sample_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
@@ -12,4 +12,4 @@ linking shared-object bindex/cruby.so
 
 current directory: /home/ec2-user/environment/sample_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cruby.so ./.gem.20181031-15466-1tjjw25/bindex
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20181101-10323-1sqkes4/bindex
