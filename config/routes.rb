@@ -1,4 +1,4 @@
-ails.application.routes.draw do
+Rails.application.routes.draw do
   get 'password_resets/new'
 
   get 'password_resets/edit'
