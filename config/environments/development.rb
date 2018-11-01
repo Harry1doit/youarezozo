@@ -5,7 +5,7 @@ Rails.application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
-config.web_console.development_only = false
+
   # Do not eager load code on boot.
   config.eager_load = false
 
@@ -29,10 +29,10 @@ config.web_console.development_only = false
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
-  config.action_mailer.default_url_options = { host: 'cadfe15a9c8d405ba42cc09fc0714310.vfs.cloud9.ap-southeast-1.amazonaws.com' }
-  host = 'cadfe15a9c8d405ba42cc09fc0714310.vfs.cloud9.ap-southeast-1.amazonaws.com' # ここをコピペすると失敗します。自分の環境に合わせてください。
+  host = 'railstutorial-yasulab.c9users.io'
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
 
+  
   config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
@@ -55,6 +55,4 @@ config.web_console.development_only = false
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  
- 
 end
