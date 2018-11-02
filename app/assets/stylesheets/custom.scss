@@ -1,9 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* mixins, variables, etc. */
-
-$gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -15,7 +12,6 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
-  // font-weight: bold;
 }
 
 section {
@@ -28,9 +24,10 @@ textarea {
 
 .center {
   text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
+}
+
+.center h1 {
+  margin-bottom: 10px;
 }
 
 /* typography */
@@ -44,7 +41,6 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
-  font-weight: bold;
 }
 
 h2 {
@@ -53,30 +49,13 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
-}
-
-h3{
-  font-size: 3.0em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  // color: #FFC09F ;
-  // color:  #ADF7B6;
-  color: $gray-light;
-}
-
-h4{
-  font-size:2.0em;
+  color: #777;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
-  font-weight: bold;
 }
-
 
 /* header */
 
@@ -84,42 +63,60 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
-  // text-transform: uppercase;
+  color: #fff;
+  text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
 }
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 
 /* footer */
 
 footer {
-  margin-top: 20px;
+  margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
-  a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 15px;
-    }
-  }
+  border-top: 1px solid #eaeaea;
+  color: #777;
 }
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
 
 /* sidebar */
 
@@ -224,6 +221,7 @@ input {
   }
 }
 
+
 .checkbox {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -237,6 +235,7 @@ input {
   width: auto;
   margin-left: 0;
 }
+
 
 /* Users index */
 
