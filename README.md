@@ -1,24 +1,22 @@
-# README
+# yoarezozo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to use
 
-Things you may want to cover:
+To run this application, please clone the repository at first.
+Then install the necessary Ruby Gems with the following command.
 
-* Ruby version
+```
+$ bundle install --without production
+```
 
-* System dependencies
+Then perform a migration to the database.
 
-* Configuration
+```
+$ rails db:migrate
+```
 
-* Database creation
+Finally,Please start up the Rails server with the following command.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ rails server
+```
